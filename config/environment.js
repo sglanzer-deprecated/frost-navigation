@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'frost-navigation',
+    podModulePrefix: 'frost-navigation/pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

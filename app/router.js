@@ -6,6 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('class');
+  this.route('transition', function() {
+    this.route('details');
+  });
 });
 
 export default Router;
