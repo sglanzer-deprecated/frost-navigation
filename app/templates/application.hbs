@@ -1,1 +1,15 @@
+<div class="header">
+    <div {{action 'magic'}} class="launcher fa fa-th-large fa-inverse fa-3x"></div>
+</div>
+
+{{#liquid-if isMagic class="magical"}}
+    <div class="magic">
+        {{#each route in routes}}
+          <div class="launch launch--{{route.style}}" {{action 'launch' route.route}}>
+              <div class="launch__title">{{route.alias}}</div>
+          </div>
+        {{/each}}
+    </div>
+{{/liquid-if}}
+
 {{outlet}}

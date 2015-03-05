@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('transition', function() {
     this.route('details');
   });
+  this.route('dashboard');
 });
 
 export default Router;
